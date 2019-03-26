@@ -1,0 +1,9 @@
+<app-todo-input (pushTodoItem)="pushTodoItem($event)"
+				(setTodosDone)="setAllTodosDone($event)">
+</app-todo-input>
+<ng-container *ngFor="let todo of todos">
+	<app-todo-item class="container"
+		(deleteTodoItem)="deleteTodosItem($event)"
+		[todoTask]="todo">
+	</app-todo-item>
+</ng-container>

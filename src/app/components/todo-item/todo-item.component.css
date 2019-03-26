@@ -1,0 +1,48 @@
+.item__wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+}
+
+.button__wrap {
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+	margin-right: 10px;
+}
+
+.todo-item {
+	display: inline-block;
+	margin: 10px;
+	border: 1px solid darkgrey;
+	border-radius: 10px;
+	width: 100%;
+	padding: 10px;
+}
+
+.btn {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.btn__done {
+	background-color: greenyellow;
+}
+
+.btn__undone {
+	background-color: grey;
+}
+
+.btn__delete {
+	background-color: firebrick;
+}
+
+.completed {
+	text-decoration: line-through;
+	color: red;
+}
