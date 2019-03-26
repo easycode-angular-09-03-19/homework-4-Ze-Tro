@@ -1,0 +1,12 @@
+<div class="container">
+	<input type="text" name="input" class="input"
+	[(ngModel)]="todoText">
+	<div class="btn__wrap">
+		<button class="btn btn__done"
+				(click)="pushTask()">Add todo
+		</button>
+		<button class="btn btn__delete"
+				(click)="setTasksDone()">Complete all
+		</button>
+	</div>
+</div>

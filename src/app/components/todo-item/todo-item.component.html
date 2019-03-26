@@ -1,0 +1,13 @@
+<div class="item__wrap">
+	<p class="todo-item" [class.completed]="todoTask.completed === true">
+		{{ todoTask.text }}
+	</p>
+	<div class="button__wrap">
+		<button class="btn btn__done" [class.btn__undone]="todoTask.completed === true"
+				(click)="completeTask()">Done
+	</button>
+		<button class="btn btn__delete"
+				(click)="deleteTask()">Delete
+		</button>
+	</div>
+</div>
